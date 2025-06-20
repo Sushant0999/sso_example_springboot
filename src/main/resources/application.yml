@@ -1,13 +1,13 @@
-spring:
-  application:
-    name: sso
-
-  security:
-    oauth2:
-      client:
-        registration:
-          google.client-id: {ID}
-          google.client-secret: {PASS}
-          github.client-id: {ID}
-          github.client-secret: {PASS}
-
+#spring:
+#  application:
+#    name: sso
+#
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google.client-id: {ID}
+#          google.client-secret: {PASS}
+#          github.client-id: {ID}
+#          github.client-secret: {PASS}
+#
