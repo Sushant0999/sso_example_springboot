@@ -6,8 +6,8 @@ spring:
     oauth2:
       client:
         registration:
-          google.client-id: "672246555370-q00ovgbb1uoo800fgmvhbq9ior6j0fg3.apps.googleusercontent.com"
-          google.client-secret: "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"
-          github.client-id: "Ov23li8XEYmpuzqaP4Hc"
-          github.client-secret: "a721171c1390fd25e95c5fe1901e57a469e3fa87"
+          google.client-id: {ID}
+          google.client-secret: {PASS}
+          github.client-id: {ID}
+          github.client-secret: {PASS}
 
