@@ -10,7 +10,7 @@ public class SsoController {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello World";
+        return "user-profile";
     }
 
     @RequestMapping("/user")

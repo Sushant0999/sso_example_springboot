@@ -12,13 +12,10 @@ public class Config {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests(registry -> {
-            registry.requestMatchers("/").permitAll();
-            registry.anyRequest().authenticated();
-        }).oauth2Login(oauth2Login -> {
-//            oauth2Login.loginPage("/login");
-//            oauth2Login.successHandler((request, response, authentication) -> {
-//                response.sendRedirect("/profile");
-//            });
+                    registry.requestMatchers("/").permitAll();
+                    registry.anyRequest().authenticated();
+                }).oauth2Login(oauth2Login -> {
+                    oauth2Login.defaultSuccessUrl("/profile");
                 })
                 .formLogin(Customizer.withDefaults())
                 .build();
